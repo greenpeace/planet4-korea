@@ -3,11 +3,16 @@
 	"description": "Greenpeace P4 korea",
 	"license": "MIT",
 	"require": {
-		"greenpeace/planet4-child-theme" : "dev-develop",
-		"greenpeace/planet4-master-theme" : "dev-develop",
-		"greenpeace/planet4-plugin-blocks" : "dev-develop"
+		"greenpeace/planet4-child-theme-korea": "0.*",
+		"greenpeace/planet4-plugin-migrated-urls": "0.0.1",
+		"wpackagist-plugin/wp-stateless": "2.1.7"
 	},
 	"scripts": {
-		"site:custom" : []
+		"core:language": "wp language core install ko_KR;wp language core activate ko_KR",
+		"install:plugin-wpimport": "wp plugin install --activate https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/wp-all-import-pro_4.5.4.zip",
+		"site:custom": [
+			"@core:language",
+			"@install:plugin-wpimport"
+		]
 	}
 }
