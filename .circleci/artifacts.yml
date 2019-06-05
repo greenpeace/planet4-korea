@@ -1,0 +1,37 @@
+job_environments:
+  common_environment: &common_environment
+    APP_HOSTPATH: korea
+    CONTAINER_PREFIX: planet4-korea
+  develop_environment: &develop_environment
+    APP_ENVIRONMENT: development
+    APP_HOSTNAME: k8s.p4.greenpeace.org
+    CLOUDSQL_INSTANCE: p4-develop-k8s
+    GOOGLE_PROJECT_ID: planet-4-151612
+    GCLOUD_CLUSTER: p4-development
+    HELM_NAMESPACE: develop
+    HELM_RELEASE: planet4-korea
+    NEWRELIC_APPNAME: P4 korea Development
+    WP_DB_NAME: planet4-korea_wordpress_develop
+    WP_STATELESS_BUCKET: planet4-korea-stateless-develop
+  release_environment: &release_environment
+    APP_ENVIRONMENT: staging
+    APP_HOSTNAME: release.k8s.p4.greenpeace.org
+    CLOUDSQL_INSTANCE: planet4-prod
+    GCLOUD_CLUSTER: planet4-production
+    GOOGLE_PROJECT_ID: planet4-production
+    HELM_NAMESPACE: korea
+    HELM_RELEASE: planet4-korea-release
+    NEWRELIC_APPNAME: P4 korea Release
+    WP_DB_NAME: planet4-korea_wordpress_release
+    WP_STATELESS_BUCKET: planet4-korea-stateless-release
+  production_environment: &production_environment
+    APP_HOSTNAME: master.k8s.p4.greenpeace.org
+    CLOUDSQL_INSTANCE: planet4-prod
+    GCLOUD_CLUSTER: planet4-production
+    GOOGLE_PROJECT_ID: planet4-production
+    HELM_NAMESPACE: korea
+    HELM_RELEASE: planet4-korea-master
+    MIN_REPLICA_COUNT: 2
+    NEWRELIC_APPNAME: P4 korea Production
+    WP_DB_NAME: planet4-korea_wordpress_master
+    WP_STATELESS_BUCKET: planet4-korea-stateless
