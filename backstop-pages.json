@@ -1,0 +1,22 @@
+{
+  "scenarios": [
+    {
+      "label": "Planet4 Korea act page",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/make-a-change/",
+      "delay": 3000,
+      "misMatchThreshold": 0.5
+    },
+    {
+      "label": "Planet4 Korea explore page",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/from-the-earth/",
+      "delay": 3000,
+      "misMatchThreshold": 0.5
+    },
+    {
+      "label": "Planet4 Korea privacy and cookies page",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/en/privacy-and-cookies/",
+      "delay": 3000,
+      "misMatchThreshold": 0.5
+    }
+  ]
+}
