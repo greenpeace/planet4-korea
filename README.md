@@ -1,4 +1,4 @@
-# Greenpeace Planet 4 International
+# Greenpeace Planet 4 Korea
 
 ![Planet4](./planet4.png)
 
