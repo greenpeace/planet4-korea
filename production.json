@@ -1,10 +1,10 @@
 {
-    "require": {
-        "greenpeace/planet4-child-theme-korea": "0.7.*",
-        "greenpeace/planet4-gpea-plugin-blocks": "0.5.*",
-        "greenpeace/planet4-plugin-engagingnetworks" : "v2.19",
-        "wpackagist-plugin/classic-editor": "1.*",
-        "wpackagist-plugin/shortcode-ui": "0.*",
-        "greenpeace/planet4-master-theme" : "v1.191.0"
-    }
+  "require": {
+    "greenpeace/planet4-child-theme-korea": "0.7.*",
+    "greenpeace/planet4-gpea-plugin-blocks": "0.5.*",
+    "greenpeace/planet4-plugin-engagingnetworks" : "v2.19",
+    "wpackagist-plugin/classic-editor": "1.*",
+    "wpackagist-plugin/shortcode-ui": "0.*",
+    "greenpeace/planet4-master-theme" : "v1.191.0"
+  }
 }
