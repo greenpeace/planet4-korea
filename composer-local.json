@@ -5,7 +5,6 @@
   "require": {
     "greenpeace/planet4-child-theme-korea": "dev-develop",
     "greenpeace/planet4-gpea-plugin-blocks": "dev-develop",
-    "greenpeace/planet4-plugin-engagingnetworks" : "v2.19",
     "wpackagist-plugin/classic-editor": "1.*",
     "wpackagist-plugin/shortcode-ui": "0.*",
     "wpackagist-plugin/easy-table-of-contents":"2.0.*"
